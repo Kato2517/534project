@@ -1,0 +1,71 @@
+---
+title: "Getting Started with BCFerriesConnector"
+author: "S"
+date: "2024-02-05"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with BCFerriesConnector}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+BCFerriesConnector is an R package designed to make it easy to work with the BC Ferries API. This vignette shows you how to use the package to get ferry routes, schedules, capacities, and specific ferry information.
+
+
+# Installation
+```{r installation, eval=FALSE}
+install.packages("BCFerriesConnector")
+```
+
+
+# Get Started
+```{r}
+library(BCFerriesConnector)
+```
+
+
+# Fetching Ferry Routes
+You can get the list of ferry routes with get_routes():
+```{r}
+routes <- get_routes()
+head(routes)
+```
+
+
+# Fetching Schedules
+To retrieve the schedule for a specific route, use 'get_schedule()':
+```{r}
+schedule <- get_schedule(route_code = "TSASWB")
+head(schedule)
+```
+
+
+# Checking Ferry Capacities
+'get_capacity()' allows you to check the capacity for a given route:
+```{r}
+capacity <- get_capacity(route_code = "TSASWB")
+head(capacity)
+```
+
+
+# Displaying Bar Chart of Ferry Capacities
+'get_capacity()' shows a bar chat of the capacity for a given. route:
+```{r}
+sallings_data = get_capacity("TSASWB")
+get_capacity_plot(sallings_data)
+```
+To fetch the sailing data, use the get_capacity() function. This function requires a route identifier as its argument, This function returns a dataframe containing details about each sailing, including its status (current or future), time, and fill percentages for cars and oversize vehicles. After retrieving the sailing data, you can visualize it using the get_capacity_plot() function. This function transforms the data into a format suitable for plotting and then generates a bar chart showing the fill percentages for both vehicle types across different sailing times. 
+
+
+
+# Conclusion
+This vignette provides an overview of the BCFerriesConnector package's functionality. For more detailed information on each function, please refer to the function's documentation using the ? followed by the function name, for example, ?get_routes.
+
+
+
+
