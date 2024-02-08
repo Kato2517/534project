@@ -1,0 +1,37 @@
+---
+title: "Demo"
+author: "Shengyao Li, Xunyan Zhao, Hexuan Zhang"
+date: "2024-02-06"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Ex: Download R Package on desktop, then run the code below to install.
+```{r}
+# setwd("~/Desktop")
+# devtools::install("BCFerriesConnector")
+```
+
+
+```{r}
+library(BCFerriesConnector)
+
+get_routes()
+
+```
+
+```{r}
+get_schedule("TSASWB")
+```
+
+```{r}
+get_capacity("TSASWB")
+
+```
+```{r}
+get_capacity_plot(get_capacity("TSASWB"))
+```
+
