@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Team Brainstorming (Jan 23 - Jan 28)
 
 ### Grasping the Concept of APIs
--The brainstorming began with a candid discussion about our collective understanding of APIs. Admittedly, we initially struggled with the concept, especially in the context of R. Our challenge was to find an API that not only provided a valuable data source but also aligned well with R's capabilities and our project's scope.
+- The brainstorming began with a candid discussion about our collective understanding of APIs. Admittedly, we initially struggled with the concept, especially in the context of R. Our challenge was to find an API that not only provided a valuable data source but also aligned well with R's capabilities and our project's scope.
 
 ### Seeking Practical Relevance
 - We pondered over various ideas, aiming to create a package that had practical applications. The consensus was that many R packages are highly academic or data-focused, which can sometimes feel detached from everyday utility. We aimed to bridge that gap and create something that would resonate with regular users, not just data scientists.
