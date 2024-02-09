@@ -1,6 +1,6 @@
 # 534project
 
-# BC Ferries Capacity API Client
+# BCFerriesConnector
 
 This R package provides a set of functions to interact with the BC Ferries API, enabling users to fetch and visualize the current capacity and sailing information for various routes offered by BC Ferries.
 
