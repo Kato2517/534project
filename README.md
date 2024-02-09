@@ -25,7 +25,7 @@ This R package provides a set of functions to interact with the BC Ferries API, 
 - Load the package and use the functions as follows:
 
 ```r
->library(bcferriescapacity)
+> library(bcferriescapacity)
 
 # Fetching API data
 > api_data <- get_data()
@@ -40,8 +40,8 @@ This R package provides a set of functions to interact with the BC Ferries API, 
 > head(combined_sailings_df)
 
 # Retrieve schedule information for a specific ferry route
-schedule_info <- get_schedule("TSASWB")
-print(schedule_info)
+> schedule_info <- get_schedule("TSASWB")
+> print(schedule_info)
 
 # Retrieve capacity information for a given ferry route
 > capacity_info <- get_capacity("TSASWB")
