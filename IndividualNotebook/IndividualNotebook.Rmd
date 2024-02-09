@@ -1,0 +1,82 @@
+---
+title: "Notebook"
+author: "Shengyao Li"
+date: "2024-02-08"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Team Brainstorming (Jan 23 - Jan 28)
+
+### Grasping the Concept of APIs
+-The brainstorming began with a candid discussion about our collective understanding of APIs. Admittedly, we initially struggled with the concept, especially in the context of R. Our challenge was to find an API that not only provided a valuable data source but also aligned well with R's capabilities and our project's scope.
+
+### Seeking Practical Relevance
+- We pondered over various ideas, aiming to create a package that had practical applications. The consensus was that many R packages are highly academic or data-focused, which can sometimes feel detached from everyday utility. We aimed to bridge that gap and create something that would resonate with regular users, not just data scientists.
+
+### Ideation and Real-Life Inspiration
+- As we shared our experiences, we realized that we all had a common connection with the city of Vancouver, especially the frequent trips between Vancouver and Victoria. This was a lightbulb moment for us.
+
+### The Ferry App Experience
+- We reflected on our routine use of the ferry service's app, and then we dicede to make soemthing like this.
+
+
+## Development of `get_routes` Function (Jan 29 - Feb 3)
+
+### Implementation Details
+- Developed the `get_routes` function as part of our R package that integrates with the BC Ferries API. The goal was to fetch and display the ferry route information in a user-friendly format.
+- The function utilizes the `httr` and `jsonlite` packages to send a GET request to the BC Ferries API and process the JSON response into a tidy data frame.
+
+### Challenges Overcome
+- A primary challenge was ensuring that the function could handle API request failures gracefully. I implemented error handling that provides a clear message if data retrieval is unsuccessful, improving the user experience during network issues or API downtime.
+
+### Function's Role and Utility
+- `get_routes` is crucial as it serves as the foundation for users to understand the ferry system's structure by returning essential route codes and terminal information. This data is pivotal for any further analysis or application within the package.
+
+### Test Outcomes
+- The tests passed successfully, indicating that `get_routes` can reliably extract and present route information. I included tests for both expected behavior and error handling to ensure comprehensive coverage.
+
+### Potential Feature: Terminal Codes Explanation
+- I considered implementing a feature to translate terminal codes into full names for user convenience. However, after evaluating the necessity and the ease with which this information can be found online, I decided against it.
+
+
+### Reasoning for Omission
+- Including this feature would not significantly enhance the core functionality of the package, and might lead to unnecessary complexity. Our goal was to keep the package streamlined and focused on its primary objectives.
+```{r}
+# terminal_codes <- data.frame(
+#   Code = c("TSA", "SWB", "SGI", "DUK", "FUL", "HSB", "NAN", "LNG", "BOW"),
+#   Name = c("Tsawwassen",
+#            "Swartz Bay",
+#            "Southern Gulf Islands",
+#            "Duke Point (Nanaimo)",
+#            "Fulford Harbour (Salt Spring Island)",
+#            "Horseshoe Bay",
+#            "Departure Bay (Nanaimo)",
+#            "Langdale",
+#            "Bowen Island"),
+#   stringsAsFactors = FALSE
+# )
+#
+# translate_code <- function() {
+#   print(terminal_codes)
+# }
+#
+# translate_code()
+```
+
+
+## Team Integration, Package Demonstration and Finalizing Remaining Tasks (Feb 4 -Feb 8)
+
+### Integration Strategies
+- We have reached the stage where individual contributions are being merged into a cohesive package. This requires careful coordination, ensuring that all functions interact seamlessly and adhere to the package's overall design philosophy.
+
+### Conducting Demo Runs
+- To test the integration, we've initiated demo runs using realistic scenarios that a user might encounter. These demos help us identify any inconsistencies and areas where the user experience could be improved.
+
+### Documentation and Examples
+- With the core functionality in place, our focus shifts to finalizing the documentation. We are ensuring that each function is clearly described, with examples provided to demonstrate their use.
+
+
