@@ -1,0 +1,58 @@
+---
+title: "Ferry Schedule Project Log"
+author: "Xunyan Zhao"
+output: html_document
+---
+
+# Project Overview
+
+This document outlines the daily progress of the `get_schedule` function development, aimed at allowing users to easily retrieve ferry schedules from the ferry's website.
+
+## Day 1: Figuring It Out
+
+### What Happened
+
+- Decided to develop a `get_schedule` function to assist everyone in knowing their ferry's departure times.
+- Examined the ferry's website to understand how to extract schedule information.
+
+## Day 2: Getting Started
+
+### What Happened
+
+- Began coding, focusing on retrieving schedule information from the ferry's website and processing the response.
+- Chose to use `dplyr` for its ease in managing data.
+
+## Day 3: Writing Instructions
+
+### What Happened
+
+- Documented how to use the `get_schedule` function, ensuring it's user-friendly.
+
+## Day 4: Making Sure It Works
+
+### What Happened
+
+- Implemented tests to verify the functionality of `get_schedule`, such as error handling and performance under slow internet conditions.
+
+## Day 5: Fixing Issues
+
+### What Happened
+
+- Identified and resolved bugs found during testing to ensure the function's reliability.
+
+## Day 6: Speeding Things Up
+
+### What Happened
+
+- Optimized the performance of `get_schedule` to reduce waiting times for users.
+
+## Day 7: Final Checks
+
+### What Happened
+
+- Conducted a final review of the project to confirm everything is in order.
+- Updated the usage instructions to reflect any last-minute adjustments.
+
+# Conclusion
+
+The development of the `get_schedule` function over the past week has been a comprehensive journey from conception to finalization, ensuring a user-friendly and efficient tool for accessing ferry schedules.
