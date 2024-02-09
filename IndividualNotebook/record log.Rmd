@@ -1,0 +1,33 @@
+---
+title: "My daily working record"
+output: html_document
+date: "2024-02-08"
+author: Hexuan Zhang
+---
+Day 1: Getting Started (Group Discussion)
+
+In detail: My teammate and I discussed various topics, including BCLC data collection, but ultimately decided on BC Ferries. We chose this project to help people check the status of ferries.
+
+Day 2: Brainstorming General Ideas
+
+In detail: I proposed an idea to modify the table to display the capacity for cars and other vehicles.
+
+Day 3: Online Research
+
+In detail: I began working on this feature, trying to understand how it should function. I researched online and reviewed API examples from other projects.
+
+Day 4: Completing My Function Using Previous Research
+
+In detail: I realized the original data type and structure were not suitable for my needs, so I had to modify them. I used the dplyr package, which works similarly to SQL, and learned it quite quickly. By the end of the day, I completed the function, which I named get_capacity, and it worked very well.
+
+Day 5: Implementing a New Idea
+
+In detail: After our proposal received feedback from Sofia, who suggested incorporating data visualization, I was tasked with this aspect. I decided to enhance my get_capacity function by creating a visualization function called get_capacity_plot, using ggplot2.
+
+Day 6: Finalizing My New Function and Adding Documentation
+
+In detail: I used tidyr to adjust the data format, making it more compatible with ggplot2. This process went smoothly. I then added documentation using Roxygen2.
+
+Day 7: Error Checking and Building Tests
+
+In detail: My main focus today was on building unit tests. It took me a few hours to navigate through the complexities of testing an API, as our function always returns varying results due to the dynamic nature of the raw data from the API. I sought help from friends in other groups and finally grasped how it works. After this, I completed my unit tests. Additionally, I discovered that, in terms of integration testing, this project was simpler than a similar project in Python. My teammate and I completed our integration tests in half an hour.
